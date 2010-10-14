@@ -39,7 +39,7 @@
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array('session','database');
+$autoload['libraries'] = array('session');
 
 
 /*
@@ -95,7 +95,7 @@ $autoload['config'] = array();
 |
 */
 
-$autoload['language'] = array('main');
+$autoload['language'] = array();
 
 
 /*
@@ -108,7 +108,7 @@ $autoload['language'] = array('main');
 |
 */
 
-$autoload['model'] = array();
+$autoload['model'] = array('gui_storage');
 
 
 

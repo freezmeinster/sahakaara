@@ -12,7 +12,17 @@
 <body>
 <div id="main">
   <div id="header">
-    <h1 id="logo">Sahakaara Storage Cluster Manager</h1>
+    <h1 id="logo">Sahakaara </h1>
+    <span id="slogan"><?php echo $this->lang->line('site');?></span>
     <hr class="noscreen" />
-    <div id="nav"> <a href="http://www.free-css.com/" id="nav-active">English</a> <span>|</span> <a href="http://www.free-css.com/">Endonesia</a> </div>
+    <?php $lang=$this->gui_storage->getlang(); ?>
+    <div id="nav"> 
+     <a <?php if ($lang=="english"){echo "id=\"nav-active\"";} ?> href="<?php echo site_url();?>/gui/setlang/english/<?php echo $this->uri->segment(2); ?>">English</a> 
+     <span>|</span>
+     <a <?php if ($lang=="endonesia"){echo "id=\"nav-active\"";} ?> href="<?php echo site_url();?>/gui/setlang/endonesia/<?php echo $this->uri->segment(2);?>">Endonesia</a> 
+     <span>|</span> 
+     <a <?php if ($lang=="spanyol"){echo "id=\"nav-active\"";} ?> href="<?php echo site_url();?>/gui/setlang/spanyol/<?php echo $this->uri->segment(2);?>">Spanyol</a>
+     <span>|</span> 
+     <a <?php if ($lang=="china"){echo "id=\"nav-active\"";} ?> href="<?php echo site_url();?>/gui/setlang/china/<?php echo $this->uri->segment(2);?>">China</a>
+   </div>
   </div>

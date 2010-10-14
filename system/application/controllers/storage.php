@@ -4,7 +4,9 @@ class Storage extends Controller {
 
 	function Storage()
 	{
-		parent::Controller();	
+		parent::Controller();
+                $lang = $this->gui_storage->getlang();
+                $this->lang->load('main', $lang);	
 	}
 	
 	function index()
