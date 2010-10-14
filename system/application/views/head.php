@@ -3,6 +3,7 @@
 <head>
 <title>Sahakaara</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="SHORTCUT ICON" HREF="<?php echo base_url();?>/favicon.ico">
 <link rel="stylesheet" media="screen,projection" type="text/css" href="<?php echo base_url();?>/css/reset.css" />
 <link rel="stylesheet" media="screen,projection" type="text/css" href="<?php echo base_url();?>/css/main.css" />
 <!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/main-msie.css" /><![endif]-->
