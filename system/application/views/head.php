@@ -4,11 +4,15 @@
 <title>Sahakaara</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="SHORTCUT ICON" HREF="<?php echo base_url();?>/favicon.ico">
-<link rel="stylesheet" media="screen,projection" type="text/css" href="<?php echo base_url();?>/css/reset.css" />
-<link rel="stylesheet" media="screen,projection" type="text/css" href="<?php echo base_url();?>/css/main.css" />
+<link rel="stylesheet" media="screen,projection" type="text/css" href="<?php echo base_url();?>css/reset.css" />
+<link rel="stylesheet" media="screen,projection" type="text/css" href="<?php echo base_url();?>css/main.css" />
 <!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="css/main-msie.css" /><![endif]-->
-<link rel="stylesheet" media="screen,projection" type="text/css" href="<?php echo base_url();?>/css/style.css" />
-<link rel="stylesheet" media="print" type="text/css" href="<?php echo base_url();?>/css/print.css" />
+<link rel="stylesheet" media="screen,projection" type="text/css" href="<?php echo base_url();?>css/style.css" />
+<link rel="stylesheet" media="print" type="text/css" href="<?php echo base_url();?>css/print.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/overcast/jquery-ui-1.8.5.custom.css" />
+<script type="text/javascript" src="<?php echo base_url();?>js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>js/jquery-ui-1.8.5.custom.min.js"></script>
+
 </head>
 <body>
 <div id="main">

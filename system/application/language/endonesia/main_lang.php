@@ -12,6 +12,10 @@ Sahakaara dibangun menggunakan teknologi Opensource, menggunakan <a href=\"http:
 Sahakaara diambil dari bahasa sansekerta yang artinya Gotong royong. Setiap Chunk server Bergotong royong untuk membentuk sebuah media penyimpanan yang Lebih besar dan lebih baik
 </p>";
 $lang['content_about_skema'] = "Skema Penggunaan Sahakaara";
+
+
 $lang['content_home'] = "Informasi Tentang Storage CLuster";
+$lang['content_home_system_mem'] = "Memory terpasang: ";
+
 $lang['content_disk_header'] = "";
 ?>

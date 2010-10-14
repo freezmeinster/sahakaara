@@ -108,7 +108,7 @@ $autoload['language'] = array();
 |
 */
 
-$autoload['model'] = array('gui_storage');
+$autoload['model'] = array('gui_storage','sys_storage');
 
 
 
