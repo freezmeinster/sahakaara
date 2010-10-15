@@ -10,14 +10,20 @@ class Sys extends Controller {
 	}
         function sys_info($item){
           $totalmem = $this->sys_storage->info('totalmem');
-          $usagemem = $this->sys_storage->info('usagemem');
-          if ($item == "mem_usage"){
-          $percent = floor(($usagemem / $totalmem )* 100); 
-          echo "<script> $(function() { $( \"#progressbar\" ).progressbar({value: $percent});}); </script>
-	        <div id=\"progressbar\"></div>      
-               ";
-          }else if ($item == "mem_total"){
+          $freemem = $this->sys_storage->info('freemem');
+          
+          if ($item == "mem_total"){
              echo "$totalmem Mb";
+          }else if ($item == "mem_free"){
+          $percent = floor(($freemem / $totalmem )* 100); 
+          echo "<script> $(function() { $( \"#progressbar2\" ).progressbar({value: $percent});}); </script>
+	        <span>$percent %</span> <div style=\"height:20px;\"  id=\"progressbar2\"></div>    
+               ";
+          }else if ($item == "userproc"){
+          $percent = $this->sys_storage->info('userproc'); 
+          echo "<script> $(function() { $( \"#proc\" ).progressbar({value: $percent});}); </script>
+	        <span>$percent %</span> <div id=\"proc\"></div>    
+               ";
           }
         }
 }

@@ -16,6 +16,7 @@ $lang['content_about_skema'] = "Skema Penggunaan Sahakaara";
 
 $lang['content_home'] = "Informasi Tentang Storage CLuster";
 $lang['content_home_system_mem_total'] = "Memory terpasang: ";
+$lang['content_home_system_mem_free'] = "Memory bebas: ";
 $lang['content_home_system_mem_usage'] = "Memory digunakan: ";
 $lang['content_disk_header'] = "";
 ?>
