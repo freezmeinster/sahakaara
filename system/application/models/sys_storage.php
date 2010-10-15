@@ -8,7 +8,7 @@ class Sys_storage extends Model {
     
     function totalmem()
     {
-      $total = shell_exec("free -m | grep Mem | awk '{print $4}'");
+      $total = shell_exec("free -m | grep Mem | awk '{print $2}'");
       return $total;
     }
 }

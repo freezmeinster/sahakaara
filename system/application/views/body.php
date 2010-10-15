@@ -1,20 +1,30 @@
   <div id="col-top"></div>
-  <div id="col" class="box">
-    <div id="col-left">
+  <div id="cols2" class="box">
+   <div id="col-left"></div>
+    <div id="col-right">
      <script type="text/javascript">
-     function getRandom() {
-      $("#mem").fadeOut("fast");
-      $("#mem").load("<?php echo site_url();?>/sys/sys_info/totalmem",'',callback);
+     function getmem() {
+      $("#mem").fadeOut("fast"); 
+      $("#mem").load("<?php echo site_url();?>/sys/sys_info/mem",'',callback);
      }
+ 
+    function getproc() { 
+      $("#proc").fadeOut("fast");
+      $("#proc").load("<?php echo site_url();?>/sys/sys_info/mem",'',callback);
+    }
+
      function callback() {
-       $("#mem").fadeIn("fast");
-       setTimeout("getRandom();", 5000);
+       $("#mem").fadeIn('fast');
+       $("#proc").fadeIn('fast');
+       setTimeout("getmem();", 5000);
+       setTimeout("getproc();", 5000);
      }
-       $(document).ready(getRandom);       
+       $(document).ready(getmem);
+       $(document).ready(getproc);       
       </script>
 
-      <p><?php echo $this->lang->line('content_home_system_mem');?> <span id="mem"></span></p>
-      <div id="usagemem"></div>
+      <p id="mem"></p>
+      <p id="proc"></p>
       </div>
   </div>
   <div id="col-bottom"></div>
