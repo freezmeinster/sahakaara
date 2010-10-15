@@ -9,11 +9,15 @@ class Sys extends Controller {
                 $this->lang->load('main', $lang);
 	}
         function sys_info($item){
-          $totalmem = $this->sys_storage->totalmem();
-          $usagemem = $this->sys_storage->totalmem();
-          if ($item == "mem"){
-          $mess=$this->lang->line('content_home_system_mem');
-          echo "<div>$mess $totalmem Mb</div>";
-          } 
+          $totalmem = $this->sys_storage->info('totalmem');
+          $usagemem = $this->sys_storage->info('usagemem');
+          if ($item == "mem_usage"){
+          $percent = floor(($usagemem / $totalmem )* 100); 
+          echo "<script> $(function() { $( \"#progressbar\" ).progressbar({value: $percent});}); </script>
+	        <div id=\"progressbar\"></div>      
+               ";
+          }else if ($item == "mem_total"){
+             echo "$totalmem Mb";
+          }
         }
 }

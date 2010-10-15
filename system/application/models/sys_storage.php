@@ -6,10 +6,15 @@ class Sys_storage extends Model {
         parent::Model();
     }
     
-    function totalmem()
+    function info($item)
     {
+      if ( $item == "totalmem"){
       $total = shell_exec("free -m | grep Mem | awk '{print $2}'");
       return $total;
+      }else  if ( $item == "usagemem"){
+      $total = shell_exec("free -m | grep Mem | awk '{print $4}'");
+      return $total;
+      }
     }
 }
 ?>
