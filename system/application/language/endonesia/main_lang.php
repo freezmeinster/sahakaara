@@ -18,5 +18,10 @@ $lang['content_home'] = "Informasi Tentang Storage CLuster";
 $lang['content_home_system_mem_total'] = "Memory terpasang: ";
 $lang['content_home_system_mem_free'] = "Memory bebas: ";
 $lang['content_home_system_mem_usage'] = "Memory digunakan: ";
+
 $lang['content_disk_header'] = "";
+
+$lang['content_node_header'] = "";
+
+$lang['content_cluster_header'] = "Pada halaman ini akan disajikan data tentang Media penyimpanan yang telah disatukan :";
 ?>
